@@ -380,7 +380,7 @@ Extra currency | This is a native implementation of existing tokens. Not current
 IHR fee | As mentioned, the IHR is not currently in use, so it is always zero. However, you can read about it in [tblkch.pdf](https://ton.org/tblkch.pdf) (3.1.8).
 Forwarding fee | Fee for forwarding message. You can read about it in [tblkch.pdf](https://ton.org/tblkch.pdf) (3.1.8).
 Logical time of creation | The time used to create the correct transaction queue. 
-UNIX tome of creation | The time the transaction was created in UNIX.
+UNIX time of creation | The time the transaction was created in UNIX.
 State Init | Code and source data for deploying a smart contract. Next, in the tutorial, this will be considered. If the bit is set to `0`, it means that we do not have a State Init. But if it is set to `1`, then there you need to write another bit, which will indicate whether the State Init is stored in **the same cell** (0) or written **as a reference** (1).
 Message body | This bit is responsible for how we store the message body. Sometimes the message body can be large and not fit into the message itself, so it should be stored as a **reference** and set the bit to `1` to show that you should expect the body as a reference. If the bit is `0`, the body is in the same cell as the message.
 
